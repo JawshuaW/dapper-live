@@ -1,23 +1,26 @@
-# Dapper Scripts Live Demo — Public-Safe Build
+# Dapper Scripts Live Demos
 
-This folder is intended for GitHub Pages or another public static host.
+Public-safe static showroom for the existing `dapper-live` GitHub Pages repository.
 
-## Files
+## Included demos
 
-- `index.html` — the public demo showroom.
-- `dapper_books_demo.html` — the browser-only Dapper Books demonstration.
-- `SECURITY.md` — important release and hosting guidance.
+- `dapper_books_demo.html` — Dapper Books writer and reader demonstration.
+- `dapper_medical_demo.html` — Dapper Medical examination, injury map, simulated procedures, dispatch, illness, ledger, practice, dossiers, and role-gated civilian preview.
+- `index.html` — unified showroom that launches both demonstrations inside a full-screen modal.
+- `assets/medical-plate-demo.webp` — reduced-resolution, watermarked public preview asset. The original medical image is not included.
 
-## Important
+## Update the existing GitHub repository
 
-This public demo intentionally contains **no RedM server code**, **no Lua**, **no SQL**, **no VORP integration**, **no exports**, **no event handlers**, **no credentials**, and **no paid resource files**.
+1. Extract the ZIP on your computer.
+2. Open the extracted `dapper-live` folder.
+3. In `https://github.com/JawshuaW/dapper-live`, upload everything inside that folder to the repository root.
+4. Allow GitHub to replace the existing `index.html`, `README.md`, `SECURITY.md`, `AUDIT.json`, and `dapper_books_demo.html` files.
+5. Add the new `dapper_medical_demo.html`, `.nojekyll`, and `assets` folder.
+6. Commit the changes to `main`.
+7. Keep GitHub Pages configured for `main` and `/(root)` under **Settings → Pages**.
 
-Visitors can still inspect any HTML, CSS, JavaScript, and images delivered to their browser. That is normal for every public website. Never place private source code, API keys, passwords, database credentials, webhook URLs, license secrets, or paid script files in this repository.
+The existing public URL should update automatically after GitHub Pages redeploys.
 
-## Publish with GitHub Pages
+## Important security rule
 
-1. Upload these files to the root of the public repository.
-2. In GitHub, open **Settings → Pages**.
-3. Select **Deploy from a branch**.
-4. Select `main` and `/(root)`.
-5. Save and wait for deployment.
+This repository must remain a clean-room browser simulation. Never add the real RedM resource, Lua files, SQL, configuration containing private values, framework integration, internal event names, licensing code, webhooks, credentials, or paid source files.

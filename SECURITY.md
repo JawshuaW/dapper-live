@@ -1,19 +1,22 @@
-# Security Notes
+# Public Demo Security Notes
 
-## What this build protects
+## What is protected
 
-- Removes the RedM/NUI resource bridge from the public demo.
-- Includes no framework, inventory, database, permission, export, or server implementation.
-- Includes no personal IP address, credentials, tokens, secrets, or webhook URLs.
-- Uses a restrictive browser Content Security Policy.
-- Stores demo drafts only in the visitor's own browser storage.
+This build includes no RedM client or server Lua, SQL schema, framework bridge, inventory implementation, exports, server events, medical calculation engine, permission implementation, credentials, tokens, webhooks, licensing logic, or paid resource source code.
 
-## What cannot be hidden
+The Dapper Medical demonstration was independently reduced to fabricated browser data and local visual interactions. The public anatomical plate is lower resolution and watermarked; the original asset is not shipped.
 
-Anything sent to a browser can be viewed or downloaded by that visitor. HTML, CSS, JavaScript, images, and visible behavior cannot be securely encrypted while still running publicly.
+## What visitors can inspect
 
-Minification or JavaScript obfuscation can discourage casual copying, but it cannot prevent determined copying and should not be treated as security.
+Anything a browser receives can be viewed or downloaded. Visitors can inspect the public HTML, CSS, JavaScript, and preview image. That is unavoidable for any interactive website, because humans apparently insist on receiving the files required to display the files.
 
-## Safe release rule
+Protection comes from publishing only a clean-room simulation. Minification and obfuscation are not reliable security controls.
 
-Only publish a clean-room browser simulation. Never upload your real RedM client/server Lua, SQL schema, internal event names, paid assets, private configuration, licensing logic, or framework integration.
+## Safe update checklist
+
+Before every public upload:
+
+1. Confirm there are no `.lua`, `.sql`, `.env`, source-map, archive, credential, or configuration files.
+2. Search for private IP addresses, email addresses, API keys, tokens, webhook URLs, event names, database details, and license secrets.
+3. Confirm every interaction uses fabricated local data and no external API or RedM bridge.
+4. Keep full-resolution paid assets outside the public repository.

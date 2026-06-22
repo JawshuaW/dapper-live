@@ -1,6 +1,64 @@
 {
-  "IPv4": [],
-  "emails": [],
-  "tokens": [],
-  "server lua markers": []
+  "build": "Dapper Scripts Live Demos \u2014 Books + Medical",
+  "public_safe_design": true,
+  "checks": {
+    "private_ipv4": [],
+    "email_addresses": [],
+    "redm_bridge_markers": [],
+    "private_file_extensions": [],
+    "external_hosts": [
+      "dapper-scripts.tebex.io",
+      "fonts.googleapis.com",
+      "fonts.gstatic.com",
+      "github.com"
+    ],
+    "allowed_external_hosts": [
+      "dapper-scripts.tebex.io",
+      "fonts.googleapis.com",
+      "fonts.gstatic.com",
+      "github.com"
+    ]
+  },
+  "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1553,
+      "sha256": "488d994971c80c3474fbb220cac9e8ba618dd82e1524f3e9bb14631e22004549"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 1417,
+      "sha256": "e4a6b4c2841a319a5ad571bad335bf961f4b7b774fb170da578569fca0ce4347"
+    },
+    {
+      "path": "assets/books-frontier-demo.webp",
+      "bytes": 10270,
+      "sha256": "86b141d3672037c63df89ba2b09ce76309c6da9b1f191a5b5ab7b30da3b29fb3"
+    },
+    {
+      "path": "assets/medical-plate-demo.webp",
+      "bytes": 56974,
+      "sha256": "6aa14cb5c17b36f6ed927fd385e9b99299f86e40d3512bf59d7823ccec4eed19"
+    },
+    {
+      "path": "dapper_books_demo.html",
+      "bytes": 8972813,
+      "sha256": "cbd8b09a7af78f12bb15d7e6dfabca2990b56c3ae7d714da3565222d0addadf3"
+    },
+    {
+      "path": "dapper_medical_demo.html",
+      "bytes": 61254,
+      "sha256": "64ffc10e4a92e4217df52f8877532d3235d84cc2b5d9cf80237a44db1dd0b51b"
+    },
+    {
+      "path": "index.html",
+      "bytes": 21271,
+      "sha256": "bce614022131594e3350eaa3d418ba38db4ea02d1e1a9ea3b3b63d37c6e6d9dd"
+    }
+  ]
 }

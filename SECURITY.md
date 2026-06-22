@@ -1,22 +1,35 @@
 # Public Demo Security Notes
 
-## What is protected
+## Protection model
 
-This build includes no RedM client or server Lua, SQL schema, framework bridge, inventory implementation, exports, server events, medical calculation engine, permission implementation, credentials, tokens, webhooks, licensing logic, or paid resource source code.
+A browser must receive the HTML, CSS, JavaScript, and images it displays. Those public files can always be inspected or downloaded. Minification, disabled right-click menus, and JavaScript obfuscation are not meaningful protection.
 
-The Dapper Medical demonstration was independently reduced to fabricated browser data and local visual interactions. The public anatomical plate is lower resolution and watermarked; the original asset is not shipped.
+The showroom is protected by separation: it publishes independently written browser simulations instead of the real paid RedM resources.
 
-## What visitors can inspect
+## Not included
 
-Anything a browser receives can be viewed or downloaded. Visitors can inspect the public HTML, CSS, JavaScript, and preview image. That is unavoidable for any interactive website, because humans apparently insist on receiving the files required to display the files.
+This build contains no:
 
-Protection comes from publishing only a clean-room simulation. Minification and obfuscation are not reliable security controls.
+- RedM client or server Lua
+- SQL schemas or database queries
+- original resource configuration
+- framework bridges or inventory integration
+- NUI callback names from the paid resources
+- server events, exports, or gameplay calculations
+- licensing logic, credentials, tokens, webhooks, or private URLs
+- original application JavaScript or CSS from Banking, Planting, Medical, or Printing Press
+- paid resource ZIP archives or source maps
+
+## Public assets
+
+Selected presentation images were resized, compressed, renamed, and marked for demonstration use. Full original asset folders are not shipped. Any image delivered to a browser remains downloadable, so irreplaceable or private artwork should never be placed in the public repository.
 
 ## Safe update checklist
 
 Before every public upload:
 
-1. Confirm there are no `.lua`, `.sql`, `.env`, source-map, archive, credential, or configuration files.
-2. Search for private IP addresses, email addresses, API keys, tokens, webhook URLs, event names, database details, and license secrets.
-3. Confirm every interaction uses fabricated local data and no external API or RedM bridge.
-4. Keep full-resolution paid assets outside the public repository.
+1. Confirm the repository contains no `.lua`, `.sql`, `.env`, `.map`, source archive, or private configuration files.
+2. Search for framework names, NUI bridge calls, server events, database details, credentials, tokens, webhook URLs, email addresses, and private IP addresses.
+3. Confirm every interaction uses fabricated local data and no external API, RedM bridge, or database connection.
+4. Keep full-resolution paid assets and all original source files outside this repository.
+5. Upload only the completed `dapper-live` public package.

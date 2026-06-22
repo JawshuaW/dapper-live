@@ -1,19 +1,23 @@
-# Dapper Scripts Live Demo Page
+# Dapper Scripts Live Demo — Public-Safe Build
+
+This folder is intended for GitHub Pages or another public static host.
 
 ## Files
-- `index.html` — the Dapper Scripts live-demo showroom.
-- `dapper_books_demo.html` — the interactive Dapper Books demonstration.
 
-## Tebex setup
-1. Host both files together on any static web host.
-2. Create a Tebex custom page named **Live Demos**.
-3. Embed or link to the hosted `index.html`.
-4. Add **Live Demos** beside **Showcase** in your navigation.
+- `index.html` — the public demo showroom.
+- `dapper_books_demo.html` — the browser-only Dapper Books demonstration.
+- `SECURITY.md` — important release and hosting guidance.
 
-The separate-file version is easier to maintain. The included `dapper_scripts_live_demos_books.html` artifact is a single-file version if your page accepts large inline HTML and JavaScript.
+## Important
 
-## Demo behavior
-- Writer and reader modes work in the browser.
-- Drafts are stored only in the visitor browser.
-- Publish changes the demo into reader mode.
-- SQL, VORP inventory, permissions, and exports remain server-only features.
+This public demo intentionally contains **no RedM server code**, **no Lua**, **no SQL**, **no VORP integration**, **no exports**, **no event handlers**, **no credentials**, and **no paid resource files**.
+
+Visitors can still inspect any HTML, CSS, JavaScript, and images delivered to their browser. That is normal for every public website. Never place private source code, API keys, passwords, database credentials, webhook URLs, license secrets, or paid script files in this repository.
+
+## Publish with GitHub Pages
+
+1. Upload these files to the root of the public repository.
+2. In GitHub, open **Settings → Pages**.
+3. Select **Deploy from a branch**.
+4. Select `main` and `/(root)`.
+5. Save and wait for deployment.

@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; frame-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
 <title>Dapper Scripts Live Demos</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap');
@@ -33,7 +35,7 @@ h1{position:relative;margin:12px 0 14px;font:900 clamp(38px,6vw,78px)/.95 Cinzel
 <section class="hero">
 <div class="kicker">Dapper Scripts • Interactive Showroom</div>
 <h1>Try It Before You Bring It Into County</h1>
-<p class="lead">Open a live browser demonstration and interact with selected Dapper Scripts directly. These demos recreate the main player experience without requiring RedM, an inventory item, or a server restart. Humanity has finally invented a product page that does more than stare back.</p>
+<p class="lead">Open a live browser demonstration and interact with selected Dapper Scripts directly. These demos provide a browser-only preview of selected player-facing features without including the protected RedM resource. Humanity has finally invented a product page that does more than stare back.</p>
 <div class="hero-actions"><button class="btn" onclick="openDemo('writer')">Launch Dapper Books Demo</button><a class="btn alt" href="#scripts">Browse Live Demos</a></div>
 </section>
 <div class="section-title" id="scripts"><h2>Available Demonstrations</h2><p>More Dapper Scripts can be added to this showroom later.</p></div>
@@ -46,7 +48,7 @@ h1{position:relative;margin:12px 0 14px;font:900 clamp(38px,6vw,78px)/.95 Cinzel
 </article>
 </section>
 <section class="info-grid"><div class="info"><strong>Safe Demonstration</strong><span>Nothing here affects a live server or database. Demo drafts stay only in the visitor's browser.</span></div><div class="info"><strong>Real Interface</strong><span>The demonstration uses the actual Dapper Books interface and core page tools, adapted safely for the web.</span></div><div class="info"><strong>Made for Tebex</strong><span>Use this as a dedicated custom page and add a “Live Demos” link beside Showcase in your top navigation.</span></div></section>
-<div class="notice"><strong style="color:var(--gold)">Demo note:</strong> Inventory behavior, VORP metadata, SQL saving, player permissions, and server exports require the real RedM resource. The interactive demo focuses on the player-facing writer and reader experience.</div>
+<div class="notice"><strong style="color:var(--gold)">Demo note:</strong> Inventory behavior, VORP metadata, SQL saving, player permissions, and server exports require the real RedM resource. The interactive demo contains only a browser-safe preview of the writer and reader experience. No server, database, framework, inventory, or protected resource code is included.</div>
 </main>
 <div class="demo-modal" id="demoModal" aria-hidden="true"><div class="demo-toolbar"><strong>Dapper Books • Live Demo</strong><div class="tools"><button onclick="sendDemo('dapper-demo-open-writer')">Writer</button><button onclick="sendDemo('dapper-demo-open-reader')">Reader</button><button onclick="sendDemo('dapper-demo-reset')">Reset</button><button class="close" onclick="closeDemo()">Exit Demo</button></div></div><iframe id="demoFrame" class="demo-frame" title="Dapper Books Live Demo" src="dapper_books_demo.html"></iframe></div>
 <script>

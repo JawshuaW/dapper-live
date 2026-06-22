@@ -1,5 +1,5 @@
 {
-  "build": "Dapper Scripts Live Showroom \u2014 Five Interactive Demos",
+  "build": "Dapper Scripts Live Showroom — Five Interactive Demos",
   "build_date": "2026-06-21",
   "public_safe_design": true,
   "included_demos": [
@@ -33,8 +33,13 @@
       "fonts.gstatic.com"
     ]
   },
-  "file_count_excluding_audit": 42,
+  "file_count_excluding_audit": 44,
   "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 66,
+      "sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b"
+    },
     {
       "path": ".nojekyll",
       "bytes": 0,
@@ -42,8 +47,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2025,
-      "sha256": "60f42aef15dc8cf1897adfbcfaa422cb2bafd24ff72683227dd488814679a04c"
+      "bytes": 2120,
+      "sha256": "85d51f78fdc583e949aa86b66b420d90290389a4d6e7c0a066a741312e60c88e"
     },
     {
       "path": "SECURITY.md",
@@ -89,6 +94,11 @@
       "path": "assets/books-frontier-demo.webp",
       "bytes": 10270,
       "sha256": "86b141d3672037c63df89ba2b09ce76309c6da9b1f191a5b5ab7b30da3b29fb3"
+    },
+    {
+      "path": "assets/dapper-books-cover.png",
+      "bytes": 23344,
+      "sha256": "58873bfba00ef06c6070f59e11667ad572c50a7e10317a7c80d498f090c4a8c2"
     },
     {
       "path": "assets/dapper-mark-demo.webp",
@@ -242,8 +252,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 25644,
-      "sha256": "8bb0e4294bef6a14e050915adcc6be76eff555226eabde65b2fd64580a42dfbb"
+      "bytes": 25357,
+      "sha256": "0d55f8948c0add27bc3ab562d5e70843abed824b92a304e3561ace74609dc24b"
     }
   ]
 }

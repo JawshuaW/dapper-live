@@ -11,6 +11,7 @@ Public-safe static showroom for the `dapper-live` GitHub Pages repository.
 - `dapper_printingpress_demo.html` — published titles, multi-page authoring, proof reader, author wallet, and publisher office preview.
 - `index.html` — unified five-script showroom with full-screen demo launcher.
 - `assets/` — reduced, compressed, and public-demo presentation assets only.
+  - `assets/dapper-books-cover.png` — public Dapper Books card artwork used by the showroom.
 
 All balances, patients, plants, publications, customers, inventory, transactions, and staff records are fabricated. Demo state exists only in the visitor's browser and resets without touching a RedM server.
 

@@ -1,5 +1,5 @@
 {
-  "build": "Dapper Scripts Live Showroom — Five Interactive Demos",
+  "build": "Dapper Scripts Live Showroom \u2014 Isolated Five-Demo Launcher",
   "build_date": "2026-06-21",
   "public_safe_design": true,
   "included_demos": [
@@ -9,6 +9,14 @@
     "Dapper Planting Complete Edition",
     "Dapper Printing Press"
   ],
+  "launcher_isolation": {
+    "generic_shared_toolbar": true,
+    "script_specific_toolbar_controls_removed": true,
+    "iframe_reloaded_for_each_demo": true,
+    "iframe_unloaded_on_exit": true,
+    "standalone_view_query_supported": true,
+    "cross_demo_labels_found": false
+  },
   "protection": {
     "clean_room_browser_simulations": true,
     "fabricated_demo_data_only": true,
@@ -27,10 +35,15 @@
       "fonts.googleapis.com",
       "fonts.gstatic.com"
     ],
-    "allowed_external_hosts": [
-      "dapper-scripts.tebex.io",
-      "fonts.googleapis.com",
-      "fonts.gstatic.com"
+    "local_asset_reference_failures": [],
+    "javascript_syntax_errors": [],
+    "runtime_page_errors": [],
+    "standalone_initial_view_tests": [
+      "books:reader",
+      "medical:patient",
+      "banking:banker",
+      "planting:processing",
+      "printing:create"
     ]
   },
   "file_count_excluding_audit": 44,
@@ -47,8 +60,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2120,
-      "sha256": "85d51f78fdc583e949aa86b66b420d90290389a4d6e7c0a066a741312e60c88e"
+      "bytes": 2503,
+      "sha256": "40d33d959609392d52589626c3720d7a7b985d027d1885704cfaec6ccbeb49e8"
     },
     {
       "path": "SECURITY.md",
@@ -227,33 +240,33 @@
     },
     {
       "path": "dapper_banking_demo.html",
-      "bytes": 34178,
-      "sha256": "14e4c9e839a223caa25c7df842a40ec78319e552b6e45dbab2ea28747d009a82"
+      "bytes": 34367,
+      "sha256": "d5f95c7defc972fa42efedbea6cc82a5be9b619f6a8ce6920f5bd63a4b933560"
     },
     {
       "path": "dapper_books_demo.html",
-      "bytes": 8972813,
-      "sha256": "cbd8b09a7af78f12bb15d7e6dfabca2990b56c3ae7d714da3565222d0addadf3"
+      "bytes": 8973031,
+      "sha256": "3ed1aeb95ddb1e703aae3d77092f424b392bfcb11f489fe37bf1697edd6a90d7"
     },
     {
       "path": "dapper_medical_demo.html",
-      "bytes": 61254,
-      "sha256": "64ffc10e4a92e4217df52f8877532d3235d84cc2b5d9cf80237a44db1dd0b51b"
+      "bytes": 61671,
+      "sha256": "b94826319568ad9cacbf7ee3168f3266f187db2baf4e31eb3a4505e051a8496a"
     },
     {
       "path": "dapper_planting_demo.html",
-      "bytes": 32558,
-      "sha256": "641a76e9e6d9867e050af4bd79c3098c2065e7eafbd259eebdc77c7dd9b12d01"
+      "bytes": 32769,
+      "sha256": "54eee55546c4b2b670b0f3d45d6bf8b4c6905351c96882c0314c34233221e9b8"
     },
     {
       "path": "dapper_printingpress_demo.html",
-      "bytes": 40938,
-      "sha256": "1fb34341ceed2919e317b6c1ea329f47bf70686d7ab5c97a9f7112f0dc300a65"
+      "bytes": 41145,
+      "sha256": "3f2ccc924711902e79f2162ae853da04f4790c12072a1562c02c4d19af08703d"
     },
     {
       "path": "index.html",
-      "bytes": 25357,
-      "sha256": "0d55f8948c0add27bc3ab562d5e70843abed824b92a304e3561ace74609dc24b"
+      "bytes": 24790,
+      "sha256": "ba52d8b4920d3a3d3680f5bbbc28ea5660e85e06c836a6804c65e3a8dc9c6f91"
     }
   ]
 }

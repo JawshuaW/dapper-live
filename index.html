@@ -16,9 +16,9 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.23;ba
 .section-head{display:flex;align-items:end;justify-content:space-between;gap:22px;margin:46px 0 18px}.section-head h2{margin:0;font:800 clamp(31px,4vw,50px)/1 Georgia,serif;color:var(--gold)}.section-head p{max-width:720px;margin:9px 0 0;color:var(--muted);line-height:1.6}.count{padding:8px 11px;border:1px solid var(--line);color:var(--gold);background:rgba(0,0,0,.22);font-size:9px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}.demo-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:19px}.demo-card{--accent:var(--gold);position:relative;overflow:hidden;min-height:480px;display:grid;grid-template-rows:225px 1fr;border:1px solid var(--line);border-top:4px solid var(--accent);background:linear-gradient(145deg,rgba(16,20,15,.98),rgba(5,7,6,.98));box-shadow:0 22px 60px rgba(0,0,0,.35)}.demo-card.featured{grid-column:span 6}.demo-card.compact{grid-column:span 4;min-height:450px}.demo-card.books{--accent:var(--books)}.demo-card.medical{--accent:var(--medical)}.demo-card.banking{--accent:var(--banking)}.demo-card.planting{--accent:var(--planting)}.demo-card.printing{--accent:var(--printing)}.card-art{position:relative;overflow:hidden;display:grid;place-items:center;border-bottom:1px solid var(--line);background:radial-gradient(circle at 50% 35%,color-mix(in srgb,var(--accent) 15%,transparent),transparent 58%),rgba(0,0,0,.22)}.card-art:before{content:"";position:absolute;inset:0;background:linear-gradient(125deg,rgba(255,255,255,.04),transparent 34%)}.live-stamp{position:absolute;z-index:2;top:13px;right:13px;padding:6px 8px;border:1px solid color-mix(in srgb,var(--accent) 40%,transparent);color:var(--accent);background:rgba(3,6,5,.76);font-size:8px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}.card-art img.hero-img{width:100%;height:100%;object-fit:cover;opacity:.72;filter:saturate(.78) contrast(1.05)}.card-art img.logo-img{position:absolute;z-index:2;width:94px;height:94px;object-fit:contain;filter:drop-shadow(0 15px 28px rgba(0,0,0,.6))}.book-cover-image{position:relative;z-index:2;width:170px;height:170px;object-fit:contain;filter:drop-shadow(18px 22px 28px rgba(0,0,0,.62));transform:rotate(-2deg);transition:transform .22s ease,filter .22s ease}.demo-card.books:hover .book-cover-image{transform:rotate(0deg) scale(1.035);filter:drop-shadow(20px 25px 32px rgba(0,0,0,.7))}.medical-plate{width:125px;max-height:205px;object-fit:contain;filter:drop-shadow(0 17px 25px rgba(0,0,0,.56))}.scan-ring{position:absolute;width:200px;height:200px;border:1px solid rgba(105,184,174,.18);border-radius:50%}.scan-ring:after{content:"";position:absolute;left:12%;right:12%;top:50%;height:1px;background:linear-gradient(90deg,transparent,#9fe1d8,transparent);box-shadow:0 0 14px rgba(105,184,174,.5);animation:scan 3s ease-in-out infinite}@keyframes scan{0%,100%{transform:translateY(-70px);opacity:.2}50%{transform:translateY(70px);opacity:.9}}.press-icons{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;gap:10px}.press-icons img{width:76px;height:76px;object-fit:contain;filter:drop-shadow(0 12px 18px rgba(0,0,0,.5))}.press-icons img:nth-child(2){transform:translateY(-14px) scale(1.18)}
 .card-body{position:relative;padding:24px}.card-kicker{display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--accent);font-size:9px;font-weight:900;letter-spacing:.15em;text-transform:uppercase}.demo-card h3{margin:8px 0 10px;font:800 30px/1.05 Georgia,serif;color:color-mix(in srgb,var(--accent) 74%,white)}.demo-card p{margin:0;color:var(--muted);font-size:13px;line-height:1.62}.tags{display:flex;flex-wrap:wrap;gap:7px;margin:16px 0 19px}.tag{padding:6px 8px;border:1px solid color-mix(in srgb,var(--accent) 23%,transparent);color:color-mix(in srgb,var(--accent) 58%,white);background:rgba(0,0,0,.18);font-size:8px;font-weight:850;letter-spacing:.07em;text-transform:uppercase}.card-actions{display:flex;flex-wrap:wrap;gap:8px}.card-actions button{min-height:41px;padding:0 13px;border:1px solid color-mix(in srgb,var(--accent) 37%,transparent);color:#fff0d2;background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 75%,#4a231c),color-mix(in srgb,var(--accent) 35%,#1d1510));font-weight:900;cursor:pointer}.card-actions button.secondary{color:color-mix(in srgb,var(--accent) 70%,white);background:rgba(0,0,0,.23)}.card-actions button:hover{filter:brightness(1.12)}
 .security{display:grid;grid-template-columns:1.1fr repeat(3,1fr);gap:14px;margin-top:26px}.security-intro,.security-card{padding:22px;border:1px solid var(--line);background:rgba(9,12,9,.86)}.security-intro h3{margin:0 0 8px;font:800 24px Georgia,serif;color:var(--gold)}.security-intro p,.security-card span{color:var(--muted);font-size:12px;line-height:1.6}.security-card strong{display:block;margin-bottom:8px;color:var(--gold);font:800 16px Georgia,serif}.notice{margin-top:15px;padding:15px 18px;border:1px solid rgba(213,108,82,.3);border-left:4px solid var(--red2);color:#c8bdac;background:rgba(73,23,18,.22);font-size:11px;line-height:1.58}.notice b{color:#f0c4ac}
-.demo-modal{position:fixed;z-index:100;inset:0;display:none;grid-template-rows:61px 1fr;background:#020303}.demo-modal.open{display:grid}.toolbar{display:flex;align-items:center;gap:14px;padding:8px 12px;border-bottom:1px solid rgba(227,189,115,.17);background:linear-gradient(90deg,#14150f,#090b09);box-shadow:0 8px 24px rgba(0,0,0,.45)}.tool-title{min-width:230px}.tool-title small{display:block;color:var(--muted);font-size:8px;letter-spacing:.15em;text-transform:uppercase}.tool-title strong{display:block;margin-top:3px;color:var(--gold);font:800 16px Georgia,serif}.tool-center{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;overflow:auto}.tool-center button,.tool-right button,.tool-right a{min-height:36px;padding:0 11px;border:1px solid rgba(227,189,115,.2);color:#d8c8a8;background:rgba(255,255,255,.025);text-decoration:none;font-size:9px;font-weight:900;letter-spacing:.07em;text-transform:uppercase;cursor:pointer;white-space:nowrap}.tool-center button.active{color:#1a1207;background:var(--gold);border-color:var(--gold)}.tool-right{display:flex;gap:7px}.tool-right .close{background:linear-gradient(180deg,#ae4837,#641b17);color:#fff}.demo-frame{width:100%;height:100%;border:0;background:#020303}.mobile-note{display:none;color:var(--muted);font-size:9px}
+.demo-modal{position:fixed;z-index:100;inset:0;display:none;grid-template-rows:58px 1fr;background:#020303}.demo-modal.open{display:grid}.toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:8px 12px;border-bottom:1px solid rgba(227,189,115,.17);background:linear-gradient(90deg,#14150f,#090b09);box-shadow:0 8px 24px rgba(0,0,0,.45)}.tool-brand{display:flex;align-items:center;gap:10px;min-width:0}.tool-brand img{width:34px;height:34px;object-fit:contain;filter:drop-shadow(0 0 10px rgba(227,189,115,.18))}.tool-brand small{display:block;color:var(--muted);font-size:8px;letter-spacing:.15em;text-transform:uppercase}.tool-brand strong{display:block;margin-top:2px;color:var(--gold);font:800 15px Georgia,serif}.tool-right{display:flex;align-items:center;gap:7px}.tool-right button,.tool-right a{min-height:36px;padding:0 11px;border:1px solid rgba(227,189,115,.2);color:#d8c8a8;background:rgba(255,255,255,.025);text-decoration:none;font-size:9px;font-weight:900;letter-spacing:.07em;text-transform:uppercase;cursor:pointer;white-space:nowrap}.tool-right .reset{color:#f0d9a7;border-color:rgba(227,189,115,.34)}.tool-right .close{background:linear-gradient(180deg,#ae4837,#641b17);color:#fff}.demo-frame{width:100%;height:100%;border:0;background:#020303}.mobile-note{display:none;color:var(--muted);font-size:9px}
 @media(max-width:1120px){.hero{grid-template-columns:1fr;padding:48px}.hero-board{display:none}.demo-card.featured,.demo-card.compact{grid-column:span 6}.security{grid-template-columns:repeat(2,1fr)}.security-intro{grid-column:span 2}}
-@media(max-width:760px){.shell{width:min(100vw - 18px,100%);padding-top:8px}.topbar{align-items:flex-start}.nav a:not(.active){display:none}.hero{padding:29px;min-height:0}.section-head{align-items:flex-start}.count{display:none}.demo-card.featured,.demo-card.compact{grid-column:1/-1}.security{grid-template-columns:1fr}.security-intro{grid-column:auto}.tool-title{min-width:0}.tool-title small{display:none}.tool-center{justify-content:flex-start}.tool-right a{display:none}.toolbar{flex-wrap:wrap;height:auto}.demo-modal.open{grid-template-rows:auto 1fr}.mobile-note{display:block;width:100%}}
+@media(max-width:760px){.shell{width:min(100vw - 18px,100%);padding-top:8px}.topbar{align-items:flex-start}.nav a:not(.active){display:none}.hero{padding:29px;min-height:0}.section-head{align-items:flex-start}.count{display:none}.demo-card.featured,.demo-card.compact{grid-column:1/-1}.security{grid-template-columns:1fr}.security-intro{grid-column:auto}.tool-brand small{display:none}.tool-brand strong{font-size:13px}.tool-right a{display:none}.tool-right button{padding:0 9px}.toolbar{height:auto}.mobile-note{display:none}}
 </style>
 </head>
 <body>
@@ -49,22 +49,73 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.23;ba
 <div class="notice"><b>Important limitation:</b> Public HTML, CSS, JavaScript, and images can always be inspected or downloaded by a visitor. These files contain only demonstration code and public-facing assets. They do not contain the private systems needed to recreate the actual RedM scripts.</div>
 </main>
 </div>
-<div id="demoModal" class="demo-modal" aria-hidden="true"><div class="toolbar"><div class="tool-title"><small>Dapper Scripts live showroom</small><strong id="demoTitle">Live Demo</strong></div><div id="demoControls" class="tool-center"></div><div class="tool-right"><a id="newTab" href="#" target="_blank" rel="noreferrer">Open New Tab</a><button class="close" onclick="closeDemo()">Exit Demo</button></div><div class="mobile-note">Rotate the device for the complete interface.</div></div><iframe id="demoFrame" class="demo-frame" title="Dapper Scripts live demonstration"></iframe></div>
+<div id="demoModal" class="demo-modal" aria-hidden="true"><div class="toolbar"><div class="tool-brand"><img src="assets/dapper-mark-demo.webp" alt=""><div><small>Dapper Scripts Live Showroom</small><strong>Interactive Preview</strong></div></div><div class="tool-right"><button id="resetDemo" class="reset" type="button">Reset Demo</button><a id="newTab" href="#" target="_blank" rel="noreferrer">Open New Tab</a><button class="close" type="button" onclick="closeDemo()">Exit Demo</button></div></div><iframe id="demoFrame" class="demo-frame" title="Dapper Scripts live demonstration"></iframe></div>
 <script>
 const configs={
- books:{title:'Dapper Books Live Demo',src:'dapper_books_demo.html',controls:[['writer','Writer'],['reader','Reader'],['reset','Reset']]},
- medical:{title:'Dapper Medical Live Demo',src:'dapper_medical_demo.html',controls:[['trauma','Trauma'],['horse','Horse Fall'],['stable','Stable'],['doctor','Doctor View'],['patient','Civilian View'],['reset','Reset']]},
- banking:{title:'Dapper Banking Live Demo',src:'dapper_banking_demo.html',controls:[['overview','Overview'],['transfer','Transfer'],['safebox','Safebox'],['loans','Loans'],['banker','Banker'],['reset','Reset']]},
- planting:{title:'Dapper Planting Live Demo',src:'dapper_planting_demo.html',controls:[['plant','Plant'],['supplies','Supplies'],['wagon','Wagon'],['processing','Processing'],['market','Market'],['reset','Reset']]},
- printing:{title:'Dapper Printing Press Live Demo',src:'dapper_printingpress_demo.html',controls:[['store','Titles'],['create','Create'],['mine','My Works'],['wallet','Wallet'],['publisher','Publisher'],['reset','Reset']]}
+ books:{src:'dapper_books_demo.html',first:'writer'},
+ medical:{src:'dapper_medical_demo.html',first:'trauma'},
+ banking:{src:'dapper_banking_demo.html',first:'overview'},
+ planting:{src:'dapper_planting_demo.html',first:'plant'},
+ printing:{src:'dapper_printingpress_demo.html',first:'store'}
 };
-const modal=document.getElementById('demoModal'),frame=document.getElementById('demoFrame'),title=document.getElementById('demoTitle'),controls=document.getElementById('demoControls'),newTab=document.getElementById('newTab');let current='',pending='';
+const modal=document.getElementById('demoModal');
+const frame=document.getElementById('demoFrame');
+const newTab=document.getElementById('newTab');
+const resetDemo=document.getElementById('resetDemo');
+let current='';
+let pending='';
+let session=0;
 function post(message){try{frame.contentWindow.postMessage(message,'*')}catch(e){}}
-function renderControls(active){const cfg=configs[current];controls.innerHTML=cfg.controls.map(([id,label])=>`<button data-action="${id}" class="${id===active?'active':''}">${label}</button>`).join('');controls.querySelectorAll('button').forEach(b=>b.onclick=()=>send(b.dataset.action,true))}
-function openDemo(script,action){current=script;pending=action||configs[script].controls[0][0];const cfg=configs[script];title.textContent=cfg.title;newTab.href=cfg.src;renderControls(pending);modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';if(frame.getAttribute('src')!==cfg.src)frame.src=cfg.src;else send(pending,false)}
-function send(action,mark){pending=action;if(mark)renderControls(action);if(current==='books'){post({type:action==='writer'?'dapper-demo-open-writer':action==='reader'?'dapper-demo-open-reader':'dapper-demo-reset'})}else if(current==='medical'){if(action==='patient'){post({type:'dapper-medical-role',role:'patient'});post({type:'dapper-medical-scenario',scenario:'trauma'})}else if(action==='doctor')post({type:'dapper-medical-role',role:'doctor'});else if(action==='reset')post({type:'dapper-medical-reset'});else{post({type:'dapper-medical-role',role:'doctor'});post({type:'dapper-medical-scenario',scenario:action})}}else{post({type:'dapper-showroom',action})}}
-function closeDemo(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');document.body.style.overflow='';post({type:'dapper-demo-pause'})}
-frame.addEventListener('load',()=>setTimeout(()=>send(pending,false),90));window.addEventListener('message',e=>{if((e.data||{}).type==='dapper-demo-close')closeDemo()});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))closeDemo()});
+function demoUrl(cfg,action,token){return `${cfg.src}?demo=${encodeURIComponent(action||cfg.first)}&session=${token}`}
+function openDemo(script,action){
+ const cfg=configs[script];
+ if(!cfg)return;
+ current=script;
+ pending=action||cfg.first;
+ session+=1;
+ const url=demoUrl(cfg,pending,session);
+ newTab.href=demoUrl(cfg,pending,'standalone');
+ modal.classList.add('open');
+ modal.setAttribute('aria-hidden','false');
+ document.body.style.overflow='hidden';
+ frame.title=`${script} interactive demonstration`;
+ frame.src=url;
+}
+function send(action){
+ if(!current)return;
+ pending=action;
+ if(current==='books'){
+  post({type:action==='writer'?'dapper-demo-open-writer':action==='reader'?'dapper-demo-open-reader':'dapper-demo-reset'});
+ }else if(current==='medical'){
+  if(action==='patient'){
+   post({type:'dapper-medical-role',role:'patient'});
+   post({type:'dapper-medical-scenario',scenario:'trauma'});
+  }else if(action==='doctor'){
+   post({type:'dapper-medical-role',role:'doctor'});
+  }else if(action==='reset'){
+   post({type:'dapper-medical-reset'});
+  }else{
+   post({type:'dapper-medical-role',role:'doctor'});
+   post({type:'dapper-medical-scenario',scenario:action});
+  }
+ }else{
+  post({type:'dapper-showroom',action});
+ }
+}
+function closeDemo(){
+ if(!modal.classList.contains('open'))return;
+ post({type:'dapper-demo-pause'});
+ modal.classList.remove('open');
+ modal.setAttribute('aria-hidden','true');
+ document.body.style.overflow='';
+ current='';
+ pending='';
+ window.setTimeout(()=>{if(!modal.classList.contains('open'))frame.src='about:blank'},40);
+}
+resetDemo.addEventListener('click',()=>send('reset'));
+frame.addEventListener('load',()=>{if(current&&pending)window.setTimeout(()=>send(pending),80)});
+window.addEventListener('message',e=>{if((e.data||{}).type==='dapper-demo-close')closeDemo()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))closeDemo()});
 </script>
 </body>
 </html>

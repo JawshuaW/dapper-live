@@ -9,11 +9,13 @@ Public-safe static showroom for the `dapper-live` GitHub Pages repository.
 - `dapper_banking_demo.html` — accounts, transfers, safebox storage, loan requests, and banker console preview.
 - `dapper_planting_demo.html` — plant care, supply purchasing, wagon rental, processing stages, and harvest market preview.
 - `dapper_printingpress_demo.html` — published titles, multi-page authoring, proof reader, author wallet, and publisher office preview.
-- `index.html` — unified five-script showroom with full-screen demo launcher.
+- `index.html` — unified five-script showroom with an isolated, generic full-screen launcher. Each demo is loaded fresh so controls and branding cannot carry over from a previously opened script.
 - `assets/` — reduced, compressed, and public-demo presentation assets only.
   - `assets/dapper-books-cover.png` — public Dapper Books card artwork used by the showroom.
 
 All balances, patients, plants, publications, customers, inventory, transactions, and staff records are fabricated. Demo state exists only in the visitor's browser and resets without touching a RedM server.
+
+The launcher toolbar contains only shared showroom actions: **Reset Demo**, **Open New Tab**, and **Exit Demo**. Script-specific navigation remains inside the correct demonstration. New-tab links preserve the selected starting view through a safe query parameter.
 
 ## Upload to the existing GitHub repository
 

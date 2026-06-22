@@ -56,7 +56,7 @@ function renderMarket(){document.getElementById('marketItems').innerHTML=['washe
 function sell(k){if(state.inv[k]<=0)return toast(`No ${labels[k].toLowerCase()} is available to sell.`);state.inv[k]--;state.sales+=prices[k];state.salesRows.unshift([labels[k],prices[k]]);renderMarket();renderProcessing();toast(`${labels[k]} sold for ${money(prices[k])}.`)}
 function clearSales(){state.sales=0;state.salesRows=[];renderMarket();toast('The demonstration sales ledger was cleared.')}
 function reset(){state=JSON.parse(JSON.stringify(initial));renderPlant();renderProducts();renderContracts();renderProcessing();renderMarket();openView('plant');toast('Dapper Planting demo reset.')}
-window.addEventListener('message',e=>{const m=e.data||{};if(m.type==='dapper-showroom'){if(m.action==='reset')reset();else openView(m.action)}});renderPlant();renderProducts();renderContracts();renderProcessing();renderMarket();
+window.addEventListener('message',e=>{const m=e.data||{};if(m.type==='dapper-showroom'){if(m.action==='reset')reset();else openView(m.action)}});renderPlant();renderProducts();renderContracts();renderProcessing();renderMarket();const requestedView=new URLSearchParams(location.search).get('demo');if(['plant','supplies','wagon','processing','market'].includes(requestedView))openView(requestedView);else if(requestedView==='reset')reset();
 </script>
 </body>
 </html>
